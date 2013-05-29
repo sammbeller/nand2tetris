@@ -1,0 +1,11 @@
+/** Returns 1 iff both inputs are 1 */
+
+CHIP And {
+	IN a, b;
+	OUT out; //true iff a=b=1
+
+	PARTS:
+	Nand(a=a, b=b, out=s1);
+	Nand(a=a, b=b, out=s2);
+	Nand(a=s1, b=s2, out=out);
+}
