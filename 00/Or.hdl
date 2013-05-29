@@ -1,0 +1,11 @@
+/** Returns 0 iff both inputs are 0 */
+
+Chip Or{
+	IN a, b;
+	OUT out;
+
+	PARTS:
+	Nand(a=a, b=a, out=s1);
+	Nand(a=b, b=b, out=s2);
+	Nand(a=s1, b=s2, out=out);
+}
