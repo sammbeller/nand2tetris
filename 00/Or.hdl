@@ -1,6 +1,6 @@
 /** Returns 0 iff both inputs are 0 */
 
-Chip Or{
+CHIP Or{
 	IN a, b;
 	OUT out;
 

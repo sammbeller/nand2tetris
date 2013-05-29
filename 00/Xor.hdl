@@ -6,13 +6,15 @@
 // This file is included here for those who wish to follow the Hardware Simulator Tutorial
 // and play with the Xor.hdl implementation. 
 
+
+
 /**
  *  Exclusive-or gate: out = !(a == b).
  */
 
 CHIP Xor {
 
-    IN a, b;
+   IN a, b;
     OUT out;
 
     PARTS:
@@ -22,3 +24,5 @@ CHIP Xor {
     And(a=nota, b=b, out=w2);
     Or(a=w1, b=w2, out=out);
 }
+
+
