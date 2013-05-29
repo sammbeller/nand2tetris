@@ -12,5 +12,8 @@ CHIP Xor {
     OUT out;
 
     PARTS:
-    // Put your code here:
+	And(a=a, b=b, out=s1);
+	Not(in=s1, out=s2);
+	Or(a=a, b=b, out=s3);
+	And(a=s2, b=s3, out=out);
 }
